@@ -5,7 +5,8 @@
 
 
 # ### **Problem 1: Print Numbers 1 to 10
-
+for i in range(1,11):
+    print(i)
 # Write a program that prints the numbers from **1 to 10**, each on a new line.
 
 
@@ -13,7 +14,11 @@
 # ### **Problem 2: Sum of Numbers
 
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
-
+n=int(input("Enter a number:"))
+sum=0
+for n in range(1,n+1):
+    sum+=n
+print("The total sum of numbers 1 to", n, "is:", sum)
 
 
 # ### **Problem 3: Factorial Calculator

@@ -11,6 +11,6 @@ for i in word:
     if i in vowel:
         count+=1
 
-print(f"Your word has {i} vowels.")
+print(f"Your word has {count} vowels.")
 # Challenge:
 # Count how many vowels are in the word.

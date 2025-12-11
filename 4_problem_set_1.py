@@ -24,6 +24,12 @@ print("The total sum of numbers 1 to", n, "is:", sum)
 # ### **Problem 3: Factorial Calculator
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
+def factorial(n):
+    factorial=1
+    for i in range(n):
+        factorial*=i+1
+    return factorial
+print(factorial(5))
 
 # *(Example: factorial of 5 is 120)
 
@@ -36,7 +42,9 @@ print("The total sum of numbers 1 to", n, "is:", sum)
 # ### **Problem 5: Print Even Numbers**
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
-
+n=int(input("Enter a number:"))
+for number in range(2,n+1,2):
+    print(number)
 
 
 # ### **Problem 6: Reverse a String**

@@ -50,7 +50,11 @@ for number in range(2,n+1,2):
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
-
+name=input("Enter a string:")
+reversed_name=""
+for char in name:
+    reversed_name=char+reversed_name
+print("Reversed string:", reversed_name)
 
 
 # ### **Problem 7: Multiplication Table**
@@ -70,6 +74,21 @@ for number in range(2,n+1,2):
 # ### **Problem 9: Fibonacci Sequence**
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
+# def cprice(n):
+#     if n<=0:
+#         return 0
+#     elif n==1:
+#         return 1
+#     else:
+#         return cprice(n-1)+cprice
+# print(cprice(6))
+def fib(n):
+    if n==1 or n==2:
+        return 1
+
+    return fib(n-1)+fib(n-2)
+for i in range(1,10):
+    print(fib(i))
 
 
 
